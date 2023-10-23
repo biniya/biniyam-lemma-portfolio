@@ -7,7 +7,6 @@ const animationClass = ref("animate__fadeInLeftBig");
 
 <template>
     <div
-        id="profile-container"
         :class="animationClass"
         class="animate__animated items-start text-start mx-auto mt-12 p-6 bg-white rounded-lg w-full flex flex-col"
     >
