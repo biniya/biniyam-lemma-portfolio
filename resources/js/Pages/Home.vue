@@ -8,8 +8,5 @@ import Header from "./Header.vue";
         >
             <Header />
         </div>
-        <div class="mt-20 text-sm">
-            <p>© 2023 - Developed by Biniyam Lemma</p>
-        </div>
     </div>
 </template>

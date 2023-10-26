@@ -2,7 +2,7 @@
 import "animate.css";
 import { ref } from "vue";
 
-const animationClass = ref("animate__fadeInLeftBig");
+const animationClass = ref("animate__zoomInLeft");
 
 const releases = ref([
     {

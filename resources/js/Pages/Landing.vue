@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import "animate.css";
 
-const animationClass = ref("animate__fadeInLeftBig");
+const animationClass = ref("animate__backInLeft");
 </script>
 
 <template>
