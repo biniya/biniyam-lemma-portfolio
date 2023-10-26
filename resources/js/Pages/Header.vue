@@ -4,12 +4,12 @@ import { ref } from "vue";
 import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
 import Landing from "./Landing.vue";
-import Experience from "./Experience.vue";
+import About from "./About.vue";
 
 const tabs = [
     { title: "Home" },
     { title: "Projects" },
-    { title: "Experience" },
+    { title: "About" },
     { title: "Contact" },
 ];
 
@@ -25,8 +25,8 @@ const activeTab = ref("home");
             <template #projects>
                 <Projects />
             </template>
-            <template #experience>
-                <Experience />
+            <template #about>
+                <About />
             </template>
             <template #contact>
                 <Contact />
