@@ -50,18 +50,24 @@ const releases = ref([
         icon: "/assets/laravel.svg",
         isDark: true,
     },
+    {
+        title: "Inertia.js",
+        description:
+            "Inertia.js lets you quickly build modern single-page React, Vue and Svelte apps using classic server-side routing and controllers.",
+        badge: "Latest",
+        icon: "/assets/inertia.svg",
+        isDark: true,
+    },
 ]);
-
-// add about page to show my about me and my skills
 </script>
 
 <template>
     <div
         :class="animationClass"
-        class="animate__animated items-start text-start mx-auto p-6 bg-white rounded-lg w-full flex flex-col"
+        class="animate__animated items-start text-start mx-auto p-8 md:px-20 bg-white rounded-lg w-full flex flex-col"
     >
         <h1 class="text-4xl font-bold text-gray-800">About Me.</h1>
-        <p class="mt-4 text-gray-600">
+        <p class="mt-4 text-gray-600 tracking-widest">
             As a software engineer, I specialize in merging creativity with
             technical expertise. Over the years, I've dedicated myself to
             crafting (and occasionally designing) exceptional web-based
@@ -93,9 +99,7 @@ const releases = ref([
                         {{ release.badge }}
                     </span>
                 </h3>
-                <p
-                    class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-                >
+                <p class="mb-4 text-base font-normal text-gray-500">
                     {{ release.description }}
                 </p>
             </li>
