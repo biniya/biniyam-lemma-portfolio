@@ -13,7 +13,7 @@ const tabs = [
     { title: "Contact" },
 ];
 
-const activeTab = ref("home");
+const activeTab = ref("Home");
 </script>
 
 <template>

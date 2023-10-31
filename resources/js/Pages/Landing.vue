@@ -8,11 +8,11 @@ const animationClass = ref("animate__zoomIn");
 <template>
     <div
         :class="animationClass"
-        class="animate__animated items-start text-start mx-auto p-6 bg-white rounded-lg w-full flex flex-col"
+        class="animate__animated p-8 md:px-20 items-start text-start mx-auto gap-4 bg-white rounded-lg w-full flex flex-col"
     >
         <h1 class="text-4xl font-bold text-gray-800">I'M Biniyam Lemma</h1>
 
-        <p class="mt-4 text-gray-600">
+        <p class="mt-4 text-gray-600 tracking-widest leading-relaxed">
             As a software engineer, I specialize in merging creativity with
             technical expertise. Over the years, I've dedicated myself to
             crafting (and occasionally designing) exceptional web-based
@@ -21,7 +21,7 @@ const animationClass = ref("animate__zoomIn");
             platform, showcases my commitment to quality, accessibility, and
             user-centric design.
         </p>
-        <p class="mt-4 text-gray-600">
+        <p class="mt-4 text-gray-600 tracking-widest leading-relaxed">
             Starting my web development journey in 2017, I've immersed myself in
             the ever-evolving realm of technology. I've had the privilege of
             working with renowned companies like Rigel technologies and
@@ -32,28 +32,6 @@ const animationClass = ref("animate__zoomIn");
             experiences, or to draw inspiration from the world of web
             development that I'm so passionate about.
         </p>
-
-        <div class="flex justify-center mt-5">
-            <a
-                class="flex items-center justify-center hover:underline py-2 text-sm font-medium text-gray-600 rounded-md"
-                href="#"
-            >
-                See More About Me
-                <svg
-                    class="ml-2 -mr-0.5 h-4 w-4 animate-spin"
-                    fill="currentColor"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                        fill-rule="evenodd"
-                    />
-                </svg>
-            </a>
-        </div>
 
         <div class="flex justify-center mt-5 gap-8">
             <a

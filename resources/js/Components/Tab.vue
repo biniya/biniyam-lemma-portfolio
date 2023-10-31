@@ -19,8 +19,12 @@ const props = defineProps({
     },
 });
 
-// Create a ref to keep track of the active tab
-const currentActiveTab = ref("home");
+// Initialize currentActiveTab with props.active
+const currentActiveTab = ref(props.active.toLowerCase());
+
+watch(currentActiveTab, (newActive) => {
+    emit("update:active", newActive);
+});
 
 // Function to update the active tab
 const updateActiveTab = (tabName) => {
@@ -32,10 +36,6 @@ const { tabs, active } = toRefs(props);
 watch(active, (newActive) => {
     emit("update:active", newActive);
 });
-
-watch(currentActiveTab, (newActive) => {
-    emit("update:active", newActive);
-});
 </script>
 
 <template>
@@ -44,7 +44,7 @@ watch(currentActiveTab, (newActive) => {
             <!-- Buttons -->
             <div class="flex justify-center">
                 <TabList
-                    class="max-[480px]:max-w-[180px] inline-flex flex-wrap justify-center bg-slate-200 rounded-[20px] p-1 mb-8 min-[480px]:mb-12"
+                    class="flex flex-wrap justify-center bg-slate-200 rounded-[20px] p-2 mb-8"
                 >
                     <Tab
                         v-for="(tab, index) in tabs"
