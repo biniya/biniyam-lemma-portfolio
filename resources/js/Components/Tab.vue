@@ -42,9 +42,9 @@ watch(active, (newActive) => {
     <div class="flex w-full flex-col items-center justify-center">
         <TabGroup v-slot="{ selectedIndex }">
             <!-- Buttons -->
-            <div class="flex justify-center items-center w-full">
+            <div class="flex md:justify-between justify-center w-full gap-2">
                 <TabList
-                    class="flex flex-wrap items-start justify-center bg-slate-200 w-4/12 rounded-[20px] p-2 mb-8"
+                    class="flex flex-wrap items-center justify-center bg-slate-200 md:w-4/12 w-full rounded-[20px] p-2 mb-8"
                 >
                     <Tab
                         v-for="(tab, index) in tabs"
@@ -65,7 +65,7 @@ watch(active, (newActive) => {
                     </Tab>
                 </TabList>
                 <div
-                    class="flex flex-col items-end justify-end w-full cursor-pointer"
+                    class="hidden md:flex flex-col items-end justify-end w-fit cursor-pointer"
                 >
                     <img alt="BL Logo" class="w-20 h-20" src="/assets/b.svg" />
                 </div>
