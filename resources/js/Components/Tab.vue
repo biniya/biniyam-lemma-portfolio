@@ -42,9 +42,9 @@ watch(active, (newActive) => {
     <div class="flex w-full flex-col items-center justify-center">
         <TabGroup v-slot="{ selectedIndex }">
             <!-- Buttons -->
-            <div class="flex justify-center">
+            <div class="flex justify-center items-center w-full">
                 <TabList
-                    class="flex flex-wrap justify-center bg-slate-200 rounded-[20px] p-2 mb-8"
+                    class="flex flex-wrap items-start justify-center bg-slate-200 w-4/12 rounded-[20px] p-2 mb-8"
                 >
                     <Tab
                         v-for="(tab, index) in tabs"
@@ -55,7 +55,7 @@ watch(active, (newActive) => {
                             :class="
                                 selectedIndex === index
                                     ? 'bg-white text-slate-900'
-                                    : 'text-slate-600 hover:text-slate-900'
+                                    : 'text-slate-600 hover:text-slate-900 border-gray-800 animate-pulse'
                             "
                             class="flex-1 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
                             @click="updateActiveTab(tab.title)"
@@ -64,6 +64,11 @@ watch(active, (newActive) => {
                         </button>
                     </Tab>
                 </TabList>
+                <div
+                    class="flex flex-col items-end justify-end w-full cursor-pointer"
+                >
+                    <img alt="BL Logo" class="w-20 h-20" src="/assets/b.svg" />
+                </div>
             </div>
 
             <!-- Content -->
