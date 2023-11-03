@@ -7,13 +7,23 @@ const animationClass = ref("animate__zoomIn");
 
 <template>
     <div
-        :class="animationClass"
-        class="animate__animated p-8 md:px-20 items-start text-start mx-auto gap-4 bg-white rounded-lg w-full flex flex-col"
+        class="animate__animated animate__fadeOutUp fixed top-50 justify-center items-center w-full flex"
     >
-        <h1 class="text-4xl font-bold text-gray-800">I'M Biniyam Lemma</h1>
+        <span class="text-4xl md:text-4xl text-gray-700 font-bold text-center"
+            >Hello</span
+        >
+    </div>
+    <div
+        :class="animationClass"
+        class="animate__animated p-8 md:px-20 items-start text-start mx-auto gap-4 rounded-lg w-full flex flex-col h-screen"
+    >
+        <!--        <h1 class="text-4xl font-bold text-gray-800">I'M Biniyam Lemma</h1>-->
+        <h1 class="text-4xl md:text-4xl font-bold text-center">
+            Hi, I'm <span class="text-indigo-600">Biniyam</span>
+        </h1>
 
         <p class="mt-4 text-gray-600 tracking-widest leading-relaxed">
-            As a software engineer, I specialize in merging creativity with
+            As a Full Stack Developer, I specialize in merging creativity with
             technical expertise. Over the years, I've dedicated myself to
             crafting (and occasionally designing) exceptional web-based
             experiences. Every project, whether it's a responsive portfolio, an

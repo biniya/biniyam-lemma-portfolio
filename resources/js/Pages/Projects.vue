@@ -56,7 +56,7 @@ const projects = ref([
             "A web-based platform that allows users to bet on a wide range of sports. " +
             "The platform offers a seamless experience for both users and administrators, with a range of functionalities " +
             "that make the process of betting ultimately fun and exciting.",
-        image: "/assets/projects/bet.jpg",
+        image: "/assets/projects/bet.png",
         technologies: DEFAULT_TECHNOLOGIES,
     },
 ]);
@@ -71,14 +71,22 @@ const techColors = {
 };
 
 function getColorForTech(tech) {
-    return techColors[tech] || "bg-gray-500"; // Default to gray if technology is not in the list
+    return techColors[tech] || "bg-gray-400"; // Default to gray if technology is not in the list
 }
 </script>
 <template>
     <div
+        class="animate__animated animate__fadeOutUp fixed top-50 justify-center items-center w-full flex"
+    >
+        <span class="text-4xl md:text-4xl font-bold text-center"
+            >My Projects</span
+        >
+    </div>
+    <div
         :class="animationClass"
         class="animate__animated flex flex-col space-y-6 p-8 md:px-20"
     >
+        <h1 class="text-4xl font-bold text-gray-800">My Projects,</h1>
         <div
             v-for="(project, index) in projects"
             :key="project.id"

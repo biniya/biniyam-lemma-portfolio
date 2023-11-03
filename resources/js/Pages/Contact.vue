@@ -5,8 +5,15 @@ const animationClass = ref("animate__zoomIn");
 </script>
 
 <template>
+    <div
+        class="animate__animated animate__fadeOutUp fixed top-50 justify-center items-center w-full flex"
+    >
+        <span class="text-4xl md:text-4xl font-bold text-center"
+            >Let's Work Together</span
+        >
+    </div>
     <div :class="animationClass" class="animate__animated p-8">
-        <h2 class="flex items-center justify-center font-bold text-4xl">
+        <h2 class="flex items-center justify-center font-bold text-3xl">
             Contact me
         </h2>
         <p

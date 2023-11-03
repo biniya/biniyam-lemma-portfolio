@@ -63,10 +63,15 @@ const releases = ref([
 
 <template>
     <div
-        :class="animationClass"
-        class="animate__animated items-start text-start mx-auto p-8 md:px-20 bg-white rounded-lg w-full flex flex-col"
+        class="animate__animated animate__fadeOutUp fixed top-50 justify-center items-center w-full flex"
     >
-        <h1 class="text-4xl font-bold text-gray-800">About Me.</h1>
+        <span class="text-4xl md:text-4xl font-bold text-center">About Me</span>
+    </div>
+    <div
+        :class="animationClass"
+        class="animate__animated items-start text-start mx-auto p-8 md:px-20 rounded-lg w-full flex flex-col"
+    >
+        <h1 class="text-4xl font-bold text-gray-800">Hi there,</h1>
         <p class="mt-4 text-gray-600 tracking-widest">
             As a software engineer, I specialize in merging creativity with
             technical expertise. Over the years, I've dedicated myself to
