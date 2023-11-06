@@ -2,6 +2,7 @@
 import { defineEmits, defineProps, ref, toRefs, watch } from "vue";
 import { Tab, TabGroup, TabList } from "@headlessui/vue";
 import Home from "../Pages/Home.vue";
+import "animate.css";
 
 const emit = defineEmits();
 const props = defineProps({
@@ -54,7 +55,7 @@ watch(active, (newActive) => {
                         <button
                             :class="
                                 selectedIndex === index
-                                    ? 'bg-white text-slate-900'
+                                    ? 'bg-white text-slate-900 animate__animated animate__zoomIn'
                                     : 'text-slate-600 hover:text-slate-900 border-gray-800 animate-pulse'
                             "
                             class="flex-1 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
