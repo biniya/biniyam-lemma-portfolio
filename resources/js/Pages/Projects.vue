@@ -76,7 +76,7 @@ function getColorForTech(tech) {
 </script>
 <template>
     <div
-        class="animate__animated animate__fadeOutUp fixed top-50 justify-center items-center w-full flex"
+        class="animate__animated animate__fadeOutUp fixed justify-center items-center w-full flex"
     >
         <span class="text-4xl md:text-4xl font-bold text-center"
             >My Projects</span
