@@ -1,7 +1,7 @@
 <script setup>
 import { defineEmits, defineProps, ref, toRefs, watch } from "vue";
 import { Tab, TabGroup, TabList } from "@headlessui/vue";
-import Home from "../Pages/Home.vue";
+import Home from "../pages/Home.vue";
 import "animate.css";
 
 const emit = defineEmits();
